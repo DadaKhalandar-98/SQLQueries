@@ -1,0 +1,37 @@
+1. Login into PostgreSql using command prompt.
+
+2. Create database PJPpractice.
+   command- CREATE DATABASE PJPpractice;
+
+3. Display all the databases.
+   command- \l --> displays all the existing databases.
+
+4. Change the database to PJPpractice.
+   command- \c PJPpractice --> this will change the database to PJPpractice.
+
+5. Display all the tables.
+   command- \d --> displays all the tables present in the current changed database.
+            \d table_name --> displays details about table_name;
+
+6. Create a table test(id integer fname character(30);
+   Query: CREATE TABLE test (
+          id INT,
+          fname VARCHAR(30));
+
+7.  After creating the table do the following
+     i)	Add a column lname to the table test
+    ii)	Rename the columnname lname to last_name
+   iii)	Add the constraint primary key to the column id
+    iv)	Drop the column last_name
+     v)	Rename the table name to test1.
+
+   Query: 7 i)  ALTER TABLE test ADD lname VARCHAR(30);
+   Query: 7 ii) ALTER TABLE test RENAME COLUMN lname to last_name;
+   Query: 7 iii)ALTER TABLE test ADD PRIMARY KEY (id);
+   Query: 7 iv) ALTER TABLE test DROP COLUMN last_name;
+   Query: 7 v)  ALTER TABLE test RENAME to test1;
+
+8.  Six tables are created in the database namely modules, courses, courseandmodules, trainers, batches and students by using queries          in "Queries_for_creating_tables" file.
+
+9.  Data is inserted into tables as given in "Tables_Data" file.
+    
